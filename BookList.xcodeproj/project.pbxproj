@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		2886A3DC1D98648A0011D635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886A3DB1D98648A0011D635 /* AppDelegate.swift */; };
-		2886A3DE1D98648A0011D635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886A3DD1D98648A0011D635 /* ViewController.swift */; };
+		2886A3DE1D98648A0011D635 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886A3DD1D98648A0011D635 /* MyTableViewController.swift */; };
 		2886A3E11D98648A0011D635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2886A3DF1D98648A0011D635 /* Main.storyboard */; };
 		2886A3E31D98648A0011D635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2886A3E21D98648A0011D635 /* Assets.xcassets */; };
 		2886A3E61D98648A0011D635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2886A3E41D98648A0011D635 /* LaunchScreen.storyboard */; };
+		2886A3EE1D9869030011D635 /* EbayAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886A3ED1D9869030011D635 /* EbayAPI.swift */; };
+		28BDBF1F1D99897E003DF4B8 /* BookStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BDBF1E1D99897E003DF4B8 /* BookStore.swift */; };
+		28BDBF211D9989F7003DF4B8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BDBF201D9989F7003DF4B8 /* Item.swift */; };
+		28BDBF241D998A11003DF4B8 /* BookList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28BDBF221D998A11003DF4B8 /* BookList.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2886A3D81D98648A0011D635 /* BookList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2886A3DB1D98648A0011D635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2886A3DD1D98648A0011D635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2886A3DD1D98648A0011D635 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		2886A3E01D98648A0011D635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2886A3E21D98648A0011D635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2886A3E51D98648A0011D635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2886A3E71D98648A0011D635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2886A3ED1D9869030011D635 /* EbayAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EbayAPI.swift; sourceTree = "<group>"; };
+		28BDBF1E1D99897E003DF4B8 /* BookStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookStore.swift; sourceTree = "<group>"; };
+		28BDBF201D9989F7003DF4B8 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		28BDBF231D998A11003DF4B8 /* BookList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookList.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				2886A3DB1D98648A0011D635 /* AppDelegate.swift */,
-				2886A3DD1D98648A0011D635 /* ViewController.swift */,
+				2886A3DD1D98648A0011D635 /* MyTableViewController.swift */,
 				2886A3DF1D98648A0011D635 /* Main.storyboard */,
+				2886A3ED1D9869030011D635 /* EbayAPI.swift */,
+				28BDBF1E1D99897E003DF4B8 /* BookStore.swift */,
+				28BDBF201D9989F7003DF4B8 /* Item.swift */,
+				28BDBF221D998A11003DF4B8 /* BookList.xcdatamodeld */,
 				2886A3E21D98648A0011D635 /* Assets.xcassets */,
 				2886A3E41D98648A0011D635 /* LaunchScreen.storyboard */,
 				2886A3E71D98648A0011D635 /* Info.plist */,
@@ -136,7 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2886A3DE1D98648A0011D635 /* ViewController.swift in Sources */,
+				28BDBF211D9989F7003DF4B8 /* Item.swift in Sources */,
+				2886A3DE1D98648A0011D635 /* MyTableViewController.swift in Sources */,
+				28BDBF241D998A11003DF4B8 /* BookList.xcdatamodeld in Sources */,
+				2886A3EE1D9869030011D635 /* EbayAPI.swift in Sources */,
+				28BDBF1F1D99897E003DF4B8 /* BookStore.swift in Sources */,
 				2886A3DC1D98648A0011D635 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,8 +315,22 @@
 				2886A3EC1D98648A0011D635 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28BDBF221D998A11003DF4B8 /* BookList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28BDBF231D998A11003DF4B8 /* BookList.xcdatamodel */,
+			);
+			currentVersion = 28BDBF231D998A11003DF4B8 /* BookList.xcdatamodel */;
+			path = BookList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2886A3D01D98648A0011D635 /* Project object */;
 }
